@@ -147,6 +147,16 @@ header .navbar a:hover {
     background: #46c5ce;
     filter: invert(100%);
 }
+a.card-link {
+    background-color: #F14A4A;
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+a:hover.card-link{
+    background-color: #752222;
+}
 @media only screen and (max-width:993px){
 .hid {
     display:none;
