@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant</title>
 </head>
-<body>
+<body class="resto">
     <header>
         <!--Barre de navigation-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">La Valaisanne</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,19 +44,19 @@
        </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row m-1">
-                <div class="col-sm-12 col-md-8 my-2 mt-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.8897435582653!2d4.8564324!3d50.4617778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1997a862f595d%3A0x147a74ba028a3399!2sRue%20Catherine%20de%20Savoie%2017%2C%205000%20Namur!5e0!3m2!1sfr!2sbe!4v1696344510894!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+        <div class="container-fluid cont">
+            <div class="row m-1 justify-content-between">
                 <div class="col-sm-12 col-md-4 mt-4">
                     <h1>Namur</h1>
                     <h5>Adresse</h5>
                     <p>Rue Catherine de Savoie, 17 </br> 5000 Namur</p>
                     <h5>Numéro de téléphone</h5>
-                    <p>04.99.44.50.33</p>
+                    <a href="tel:04.99.44.50.33">04.99.44.50.33</a>
                     <h5>Email</h5>
-                    <p>lavalaisanne@namur.com</p>
+                    <a href="mailto:lavalaisanne@namur.com">lavalaisanne@namur.com</a>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2 mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.8897435582653!2d4.8564324!3d50.4617778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c1997a862f595d%3A0x147a74ba028a3399!2sRue%20Catherine%20de%20Savoie%2017%2C%205000%20Namur!5e0!3m2!1sfr!2sbe!4v1696344510894!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-sm-12 col-md-12">
                     <h3>Horaires</h3>
@@ -91,18 +91,19 @@
                         </li>
                         </ul>
                 </div>
-               <div class="col-sm-12 col-md-8 my-2 mt-4">
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.989610302362!2d5.570632193121565!3d50.64588410013054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa0c398f0001%3A0xa6d9140b1c8ba06e!2sPl.%20du%20March%C3%A9%2015%2C%204000%20Li%C3%A8ge!5e0!3m2!1sfr!2sbe!4v1696344631823!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
+                <div class="bords"></div>
                 <div class="col-sm-12 col-md-4 mt-4">
                     <h1>Liège</h1>
                     <h5>Adresse</h5>
                     <p>Place du marché, 15 </br> 4000 Liège</p>
                     <h5>Numéro de téléphone</h5>
-                    <p>04.99.44.50.32</p>
+                    <a href="tel:04.99.44.50.32">04.99.44.50.32</a>
                     <h5>Email</h5>
-                    <p>lavalaisanne@liege.com</p>
+                    <a href="mailto:lavalaisanne@liege.com">lavalaisanne@liege.com</a>
                 </div>
+               <div class="col-sm-12 col-md-6 my-2 mt-4">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.989610302362!2d5.570632193121565!3d50.64588410013054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa0c398f0001%3A0xa6d9140b1c8ba06e!2sPl.%20du%20March%C3%A9%2015%2C%204000%20Li%C3%A8ge!5e0!3m2!1sfr!2sbe!4v1696344631823!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
                 <div class="col-sm-12 col-md-12">
                     <h3>Horaires</h3>
                     <ul class="list-group">
@@ -136,17 +137,18 @@
                         </li>
                         </ul>
                 </div>
-                <div class="col-sm-12 col-md-8 my-2 mt-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2234139827087!2d4.352683093184281!3d50.84554698579886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fce0ba71d%3A0x2f634768a374d3b0!2sCantersteen%2010%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1696344679965!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <div class="bords"></div>
                 <div class="col-sm-12 col-md-4 mt-4">
                     <h1>Bruxelles</h1>
                     <h5>Adresse</h5>
                     <p>Cantersteen, 10 </br> 1000 Bruxelles</p>
                     <h5>Numéro de téléphone</h5>
-                    <p>04.99.44.50.31</p>
+                    <a href="tel:04.99.44.50.31">04.99.44.50.31</a>
                     <h5>Email</h5>
-                    <p>lavalaisanne@bruxelles.com</p>
+                    <a href="mailto:lavalaisanne@bruxelles.com">lavalaisanne@bruxelles.com</a>
+                </div>
+                <div class="col-sm-12 col-md-6 my-2 mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2234139827087!2d4.352683093184281!3d50.84554698579886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fce0ba71d%3A0x2f634768a374d3b0!2sCantersteen%2010%2C%201000%20Bruxelles!5e0!3m2!1sfr!2sbe!4v1696344679965!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-sm-12 col-md-12">
                     <h3>Horaires</h3>
@@ -184,6 +186,45 @@
             </div>
         </div>
     </main>
+    <footer>
+        <footer>
+            <!-- Cookie Banner -->
+            <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+                🍪 Ce site utilise des cookies afin de vous fournir la meilleure expérience possible. 
+                <a href="https://www.cookiesandyou.com/" target="blank">En apprendre plus</a>
+                <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+                J'ai compris
+                </button>
+            </div>
+            <script>
+                function showCookieBanner(){
+                let cookieBanner = document.getElementById("cb-cookie-banner");
+                cookieBanner.style.display = "block";
+                }
+
+                function hideCookieBanner(){
+                localStorage.setItem("cb_isCookieAccepted", "yes");
+                let cookieBanner = document.getElementById("cb-cookie-banner");
+                cookieBanner.style.display = "none";
+                }
+
+                function initializeCookieBanner(){
+                let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+                if(isCookieAccepted === null)
+                {
+                localStorage.setItem("cb_isCookieAccepted", "no");
+                showCookieBanner();
+                }
+                if(isCookieAccepted === "no"){
+                showCookieBanner();
+                }
+                }
+
+                window.onload = initializeCookieBanner();
+                window.cb_hideCookieBanner = hideCookieBanner;
+            </script> 
+        </footer>
+    </footer>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">

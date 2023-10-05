@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
 </head>
-<body>
+<body class="menu2">
     <header>
         <!--Barre de navigation-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">La Valaisanne</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,32 +44,32 @@
        </nav>
     </header>
     <main>
-        <h1 class="text-center">Menu</h1>
+        <h1 class="text-center">~ Menu ~</h1>
         <!--Carte des entrées-->
-        <div class="container">
+        <div class="container cont">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <h2>Entrées</h2>
                     <img src="img/charcut.jpg" alt="planche charcuterie" height="200px" class="rounded mx-auto d-block my-2">
-                    <ul class="list-group">
+                    <ul class="list-group listmenu">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                           Planche charcuterie
                           <span class="badge bg-light text-dark rounded-pill">14.00</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Planche fromage
+                        Planche fromage
                           <span class="badge bg-light text-dark rounded-pill">16.00</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                          Fondus de parmesan
+                        Fondus de parmesan
                           <span class="badge bg-light text-dark rounded-pill">13.00</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Cassolette de scampis au basilic
+                        Cassolette de scampis au basilic
                             <span class="badge bg-light text-dark rounded-pill">13.00</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Croquettes de crevettes grises
+                        Croquettes de crevettes grises
                             <span class="badge bg-light text-dark rounded-pill">16.00</span>
                         </li>
                       </ul>
@@ -78,7 +78,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-8">
                     <h2>Fondues</h2>
                     <img src="img/fondue3.jpg" alt="planche charcuterie" height="200px" class="rounded mx-auto d-block my-2">
-                    <ul class="list-group">
+                    <ul class="list-group listmenu">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                         Valaisanne
                         <span class="badge bg-light text-dark rounded-pill">22.00</span>
@@ -105,7 +105,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-8">
                     <h2>Raclettes</h2>
                     <img src="img/raclette.jpg" alt="raclette" height="200px" class="rounded mx-auto d-block my-2">
-                    <ul class="list-group">
+                    <ul class="list-group listmenu">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                         Valaisanne <sub class="hid">Fromage, oignons, cornichons, oeufs battus, champignons</sub>
                         <span class="badge bg-light text-dark rounded-pill">22.00</span>
@@ -132,7 +132,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <h2>Desserts</h2>
                     <img src="img/mousse.jpg" alt="mousse chocolat" height="200px" class="rounded mx-auto d-block my-2">
-                    <ul class="list-group">
+                    <ul class="list-group listmenu">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                         Mousse au chocolat
                         <span class="badge bg-light text-dark rounded-pill">6.00</span>
@@ -158,6 +158,45 @@
             </div class="row">
         </div class="container">
     </main>
+    <footer>
+        <footer>
+            <!-- Cookie Banner -->
+            <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+                🍪 Ce site utilise des cookies afin de vous fournir la meilleure expérience possible. 
+                <a href="https://www.cookiesandyou.com/" target="blank">En apprendre plus</a>
+                <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+                J'ai compris
+                </button>
+            </div>
+            <script>
+                function showCookieBanner(){
+                let cookieBanner = document.getElementById("cb-cookie-banner");
+                cookieBanner.style.display = "block";
+                }
+
+                function hideCookieBanner(){
+                localStorage.setItem("cb_isCookieAccepted", "yes");
+                let cookieBanner = document.getElementById("cb-cookie-banner");
+                cookieBanner.style.display = "none";
+                }
+
+                function initializeCookieBanner(){
+                let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+                if(isCookieAccepted === null)
+                {
+                localStorage.setItem("cb_isCookieAccepted", "no");
+                showCookieBanner();
+                }
+                if(isCookieAccepted === "no"){
+                showCookieBanner();
+                }
+                }
+
+                window.onload = initializeCookieBanner();
+                window.cb_hideCookieBanner = hideCookieBanner;
+            </script> 
+        </footer>
+    </footer>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">

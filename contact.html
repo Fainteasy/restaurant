@@ -3,14 +3,14 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Welcome</title>
+            <title>Contacts</title>
         </head>
-    <body>
+    <body class="contact">
         <header>
             <!--Barre de navigation-->
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">La Valaisanne</a>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid navig">
+                <a class="navbar-brand nomresto" href="index.html">La Valaisanne</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,107 +44,130 @@
         </nav>
         </header>
         <main>
-            <h1 class="m-3">Formulaire de contact et de demande de réservation</h1>
-            <form class="row g-3 needs-validation mx-5" novalidate>
-                <div class="col-sm-12 col-md-6">
-                  <label for="prenom" class="form-label"> Prénom </label>
-                  <input type="text" class="form-control" id="prenom" placeholder="John" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                  <label for="nom" class="form-label">Nom</label>
-                  <input type="text" class="form-control" id="nom" placeholder="Smith" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-8">
-                  <label for="email" class="form-label">Adresse Mail</label>
-                  <div class="input-group has-validation">
-                    <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
+            <h1>Formulaire de contact et de demande de réservation</h1>
+            <div class="container-fluid cont">
+              <form class="row g-3 needs-validation justify-content-center mx-5" novalidate>
+                  <div class="col-sm-12 col-md-4 m-1">
+                    <label for="prenom" class="form-label"> Prénom </label>
+                    <input type="text" class="form-control" id="prenom" placeholder="John" required>
+                    <div class="valid-feedback">
+                    Parfait!
+                    </div>
                     <div class="invalid-feedback">
-                      Please choose a username.
+                    Entrez votre Prénom.
                     </div>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">City</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">State</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
+                  <div class="col-sm-12 col-md-4 m-1">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" placeholder="Smith" required>
+                    <div class="valid-feedback">
+                    Parfait!
+                    </div>
                     <div class="invalid-feedback">
-                      You must agree before submitting.
+                    Entrez votre Nom de Famille.
                     </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
-              </form>
-           <form class="row g-3 needs-validation" novalidate>
-             <div class="col-sm-12 col-md-6 mx-5 mb-3">
-                 <label for="firstname" class="form-label">Prénom</label>
-                 <input type="text" class="form-control" id="firstname" placeholder="John" value="Mark" required>
-                 <div class="valid-feedback">
-                    Looks good!
-                </div>
-             </div>
-             <div class="col-sm-12 col-md-6 mx-5 mb-3">
-                 <label for="lastname" class="form-label">Nom</label>
-                 <input type="text" class="form-control" id="lastname" value="Smith" placeholder="Smith" required>
-                 <div class="valid-feedback">
-                    Looks good!
-                </div>
-             </div>
-             <div class="col-sm-12 col-md-8 col-lg-6 mx-5 mb-4">
-                 <label for="Email" class="form-label">Adresse mail</label>
-                 <input type="email" class="form-control" id="Email" placeholder="name@example.com">
-             </div>
-             <div class="col-sm-12 col-md-8 col-lg-8 mx-5 mb-4">
-                 <label for="message" class="form-label">Ecrivez votre message</label>
-                 <div>
-                     <select class="form-select disabled mb-1" aria-label="sujet">
-                         <option selected>Pourquoi nous contactez-vous?</option>
-                         <option value="1">Demande de réservation</option>
-                         <option value="2">Informations sur les plats</option>
-                         <option value="3">Question pour un évènement</option>
-                       </select>
-                 </div>
-                 <textarea class="form-control" id="message" rows="5"></textarea>
-             </div>
-             <div class="col-12">
-                <button class="btn btn-primary" type="submit">Envoyer</button>
-              </div>
-            </form>
-           
+                  <div class="col-sm-12 col-md-8">
+                    <label for="email" class="form-label">Adresse Mail</label>
+                    <div class="input-group has-validation">
+                      <input type="email" class="form-control" id="email" placeholder="johnsmith@email.com" required>
+                      <div class="valid-feedback">
+                        Parfait!
+                        </div>
+                      <div class="invalid-feedback">
+                    Entrez une adresse mail valide
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                    <label for="sujet" class="form-label">Sujet</label>
+                    <select class="form-select" id="sujet" required>
+                      <option selected disabled value="">Choisissez votre sujet</option>
+                      <option>Demande de réservation</option>
+                      <option>Organisation d'un évènement</option>
+                      <option>Demande professionnelle</option>
+                    </select>
+                    <div class="valid-feedback">
+                      Parfait!
+                      </div>
+                    <div class="invalid-feedback">
+                    Choisissez la raison pour laquelle vous nous contactez.
+                    </div>
+                  </div>
+                  <div class="mb-3 col-sm-12 col-md-8">
+                    <label for="msg" class="form-label">Message</label>
+                    <textarea class="form-control" id="msg" rows="3" placeholder="Ecrivez nous votre message ici." required></textarea>
+                    <div class="valid-feedback">
+                      Parfait!
+                      </div>
+                    <div class="invalid-feedback">
+                     Expliquez-nous les raisons de votre demande.
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 text-center">
+                    <button class="btn btn-danger " type="submit">Envoyer un message</button>
+                  </div>
+                </form>
+                <script>
+                (function () {
+                  'use strict'
+                
+                  var forms = document.querySelectorAll('.needs-validation')
+                
+                  Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                      form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                          event.preventDefault()
+                          event.stopPropagation()
+                        }
+                
+                        form.classList.add('was-validated')
+                      }, false)
+                    })
+                })()
+              </script>
+            </div>
         </main>
+        <footer>
+          <footer>
+            <!-- Cookie Banner -->
+            <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+                🍪 Ce site utilise des cookies afin de vous fournir la meilleure expérience possible. 
+                <a href="https://www.cookiesandyou.com/" target="blank">En apprendre plus</a>
+                <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+                J'ai compris
+                </button>
+            </div>
+            <script>
+                function showCookieBanner(){
+                let cookieBanner = document.getElementById("cb-cookie-banner");
+                cookieBanner.style.display = "block";
+                }
+
+                function hideCookieBanner(){
+                localStorage.setItem("cb_isCookieAccepted", "yes");
+                let cookieBanner = document.getElementById("cb-cookie-banner");
+                cookieBanner.style.display = "none";
+                }
+
+                function initializeCookieBanner(){
+                let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+                if(isCookieAccepted === null)
+                {
+                localStorage.setItem("cb_isCookieAccepted", "no");
+                showCookieBanner();
+                }
+                if(isCookieAccepted === "no"){
+                showCookieBanner();
+                }
+                }
+
+                window.onload = initializeCookieBanner();
+                window.cb_hideCookieBanner = hideCookieBanner;
+            </script> 
+        </footer>
+        </footer>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
