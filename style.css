@@ -178,3 +178,6 @@ footer a:hover {
 footer h6{
     color: #F14A4A;
 }
+footer {
+    padding-top: 10px;
+}
