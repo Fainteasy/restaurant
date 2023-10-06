@@ -7,6 +7,7 @@
 body {
     background-color: #253031;
     color: whitesmoke;
+    font-family: 'Jost', sans-serif; ;
 }
 h1, h2, h3, h4, h5 {
     color: #F14A4A;
@@ -17,8 +18,10 @@ h1, h2, h3, h4, h5 {
 .jumbotron {
     font-family: 'Satisfy', cursive;
     background-image: url(img/fondue.jpg);
-    backdrop-filter: blur(10px);
     margin-top: 70px;
+}
+.descr {
+    backdrop-filter: blur(10px);
 }
 header {
     position:fixed; 
@@ -157,9 +160,21 @@ a.card-link {
 a:hover.card-link{
     background-color: #752222;
 }
-@media only screen and (max-width:993px){
-.hid {
-    display:none;
+li.active a{
+    background-color: #752222;
 }
+.menu2 p{
+    font-family: "Jost", sans-serif;
+    font-size: 80%;
 }
-
+footer p,a {
+    font-family: 'Jost', sans serif;
+    color: whitesmoke;
+    font-size: 100%;
+}
+footer a:hover {
+    color: #F14A4A;
+}
+footer h6{
+    color: #F14A4A;
+}
