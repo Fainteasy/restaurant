@@ -181,3 +181,7 @@ footer h6{
 footer {
     padding-top: 10px;
 }
+.livraison .plat {
+    border-bottom: 0.5px solid whitesmoke;
+    padding: 5px;
+}
