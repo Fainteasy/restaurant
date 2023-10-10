@@ -185,3 +185,57 @@ footer {
     border-bottom: 0.5px solid whitesmoke;
     padding: 5px;
 }
+.quantites-panier {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #fc2f2f;
+    background-color: #eee;
+    color: #333;
+    padding: 0px;
+    margin-bottom:3px ;
+    text-align: center;
+}
+.livraison h1{
+    margin-top: 80px;
+    text-align: center;
+}
+.livraison .subtitle {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+.nom-plat {
+    text-align: center;
+}
+.livraison h5, h3 {
+    font-family: 'Dancing Script';
+    font-size: 200%;
+    margin-top: 10px;
+}
+
+.nom-plat {
+    font-size: 110%;
+}
+.nom-plat-panier, .prix-plat-panier {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.ligne-panier {
+    margin-right: 20px;
+    font-size: 130%;
+    font-weight: 700;
+}
+.panier-total {
+    border-top: 1px solid whitesmoke;
+    margin-right: 20px;
+    font-size: 130%;
+}
+
+.panier {
+    background-color: #3B494A;
+    border-radius: 10px;
+}
+.ligne-panier-2 {
+    border-bottom: 1px solid whitesmoke;
+}

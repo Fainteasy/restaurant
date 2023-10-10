@@ -27,7 +27,7 @@ function ready () {
 }
 
 function acheterClick () {
-    alert ('Merci pour votre Achat !')
+    alert ('Merci pour votre commande, vous serez livré au plus tôt !')
     let panierPlats = document.getElementsByClassName('panier-plats')[0]
     while (panierPlats.hasChildNodes()){
         panierPlats.removeChild(panierPlats.firstChild)
@@ -65,19 +65,19 @@ function ajouterAuPanier (titre, prix) {
     let panierPlatNoms = panierPlats.getElementsByClassName('nom-plat-panier')
     for (let i = 0; i < panierPlatNoms.length; i++){
         if (panierPlatNoms[i].innerText==titre) {
-            alert ('Cet article est déjà dans votre panier !')
+            alert ('Cet article est déjà dans votre commande, ajoutez en directement dessus !')
             return
         }
     }
     let panierPlatContenu = `
-    <div class="panier-plat row">
-        <div class="col-5 nom-plat-panier">${titre}</div>
-        <div class="col-2 prix-plat-panier">${prix}</div>
-        <div class="col-5 quantites">
-            <input class="quantites-panier" type="number" value="1">
-            <button class="btn btn-danger bouton-supprimer" type="button">Supprimer</button>
-        </div>
-        </div>
+        <div class="panier-plat row p-1">
+            <div class="col-5 nom-plat-panier">${titre}</div>
+            <div class="col-2 prix-plat-panier">${prix}</div>
+            <div class="col-5 quantites text-center">
+                <input class="quantites-panier" type="number" value="1">
+                <button class="btn btn-danger bouton-supprimer" type="button">Supprimer</button>
+            </div>
+        </div>  
     `
     lignePanier.innerHTML = panierPlatContenu
     panierPlats.append(lignePanier)
